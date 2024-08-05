@@ -121,11 +121,14 @@ footer {
     overflow: auto;
     .logo {
         position: absolute;
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         float: right;
         right: 6rem;
-        animation: rotation 10s infinite linear;
+        
+    }
+    .logo:hover {
+        animation: rotation 25s infinite linear;
     }
 }
 @keyframes rotation {
