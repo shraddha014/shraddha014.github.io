@@ -12,49 +12,59 @@
   </head>
   <body>
     <header>
+      <div class="header-name-div">
+        <img src="./assests/images/profile_pic_icon.jpeg" class="icon" />
+        <span>Shraddha <br />MSITM Student</span>
+      </div>
       <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#experinece">Experinece</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="index.html" id="home-id">Home</a></li>
+          <li><a href="experience.html" id="experience-id">Experience</a></li>
+          <li><a href="education.html" id="education-id">Education</a></li>
+          <li><a href="projects.html" id="projects-id">Projects</a></li>
         </ul>
       </nav>
-      <div class="right-header-container">
+
+      <div class="header-cv-div">
+        <a class="resume-button" id="openPdfButton">
+          <img src="./assests/icons/download_icon.svg" /> Download CV
+        </a>
+      </div>
+    </header>
+
+    <div id="home" class="section">
+      <div class="leftmost-container">
         <a
           href="https://www.linkedin.com/in/beshraddha/"
           title="LinkedIn"
           target="_blank"
         >
-          <img src="./assests/icons/linkedin-icon.jpeg" class="icon" />
+          <img src="./assests/icons/linkedin-icon.svg" class="icon" />
         </a>
         <a href="https://github.com/shraddha014" title="Github" target="_blank">
-          <img src="./assests/icons/github-icon.png" class="icon" />
+          <img src="./assests/icons/github-icon.svg" class="icon" />
         </a>
         <a
           href="https://leetcode.com/u/shraddha014/"
           title="Leetcode"
           target="_blank"
         >
-          <img src="./assests/icons/leetcode-icon.png" class="icon" />
+          <img src="./assests/icons/leetcode-icon.svg" class="icon" />
         </a>
         <a
           href="https://www.instagram.com/beshraddha"
           title="Instagram"
           target="_blank"
         >
-          <img src="./assests/icons/insta-icon.png" class="icon" />
+          <img src="./assests/icons/insta-icon.svg" class="icon" />
         </a>
       </div>
-    </header>
-
-    <div id="home" class="section">
       <div>
         <img id="profile-photo" src="./assests/images/sketch_profile_pic.jpg" />
       </div>
       <div class="home-content">
         <div class="left">
-          <h2>Shraddha</h2>
+          <span class="name">Welcome, I'am <br /><u>Shraddha</u></span>
           <span
             >I am a dedicated software engineer pursuing a Master's in
             Information Technology & Management at The University of Texas at
@@ -63,43 +73,26 @@
             solutions, such as the ACARS application, and led projects like
             Hook'em Hardware using technologies like ReactJS, Python, and
             MongoDB. My technical expertise includes Java, Python, Angular, and
-            Spring Boot. As a mentor and guest lecturer, I am committed to
-            sharing knowledge and fostering growth. I am passionate about
-            turning innovative ideas into reality and continually advancing my
-            skills in the tech industry.</span
+            Spring Boot. I am passionate about turning innovative ideas into
+            reality and continually advancing my skills in the tech
+            industry.</span
           >
         </div>
-        <div class="button-logo-container">
-          <button class="resume-button" id="openPdfButton">
-            Resume <img src="./assests/icons/open_new.svg" />
-          </button>
-          <a href="mailto:ms.shraddha14@example.com">
-            <img
-              src="./assests/icons/hire-logo.png"
-              alt="hire logo"
-              class="logo"
-            />
-          </a>
-        </div>
+      </div>
+      <div class="button-logo-container">
+        <a href="mailto:ms.shraddha14@example.com">
+          <img
+            src="./assests/icons/hire-logo.png"
+            alt="hire logo"
+            class="logo"
+          />
+        </a>
       </div>
     </div>
-    <div id="experinece" class="section">
-      <h2>Experince</h2>
-    </div>
-    <div id="education" class="section">
-      <h2>Education</h2>
-    </div>
-    <div id="projects" class="section">
-      <h2>Projects</h2>
-      <p>
-        Explore my latest projects and articles, showcasing my expertise in web
-        development.
-      </p>
-    </div>
-
     <footer>
       <p>&copy; 2024 My Portfolio</p>
     </footer>
     <script src="script.js"></script>
+    <script src="navHighlight.js"></script>
   </body>
 </html>

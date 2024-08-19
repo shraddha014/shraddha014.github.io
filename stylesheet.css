@@ -1,6 +1,7 @@
 .icon {
     height: 24px;
     width: 24px;
+    border-radius: 50%;
 }
 #profile-photo {
     width: 380px;
@@ -11,20 +12,33 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #0F363D;
 }
 
 header {
-
-    background-color: #333;
-    color: #fff;
+    color: #D7EAE4;
     text-align: center;
-    padding: 10px 0;
+    padding: 2rem 0;
     position: fixed;
     width: 100%;
     top: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    .header-name-div {
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+        span {
+            text-align: start;
+        }
+        img{
+            height: 32px;
+            width: 32px;
+        }
+    }
+    .header-cv-div {
+        margin-right: 1rem;
+    }
 }
 
 nav ul {
@@ -39,17 +53,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #D7EAE4;
     text-decoration: none;
 }
 
 nav ul li a:hover {
-    color: #ff6347;
+    color: #DAA49C;
 }
 
 .section {
     padding: 50px;
-    background-color: #fff;
 }
 
 h1, h2 {
@@ -61,23 +74,36 @@ p {
     color: #555;
 }
 
-#home, #experinece, #education, #projects {
-    color: black;
+#home, #experience, #education, #projects {
+    color: white;
     height: 80vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 .home-content {
     display: flex;
     flex-direction: column;
-    color: black;
+    color: #D7EAE4;
     gap: 2rem;
     width: 50%;
     .left {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        .name{
+            color: white;
+            text-align: start;
+            font-family: Sans-serif;
+            font-size: 84px;
+            font-weight: 200;
+            text-transform: capitalize;
+            font-style: italic;
+            line-height: 86px;
+            margin-block-end: 20px;
+        }
     }
 }
 
@@ -102,16 +128,19 @@ footer {
     padding: 20px;
 }
 
-.right-header-container{
+.leftmost-container{
     display: flex;
+    flex-direction: column;
     gap: 2rem;
+    position: fixed;
+    left: 0;
+    padding-left: 1rem;
 }
 
 .resume-button {
     width: 8rem;
-    color: white;
-    background-color: black;
-    border-radius: 5px;
+    color: #DAA49C;
+    text-decoration: underline;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -119,10 +148,11 @@ footer {
 }
 .button-logo-container {
     overflow: auto;
+    padding-top: 18rem;
     .logo {
         position: absolute;
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
         float: right;
         right: 6rem;
         
@@ -138,5 +168,10 @@ footer {
     to {
       transform: rotate(360deg);
     }
+  }
+
+  .active {
+    font-weight: bold;
+    color: #DAA49C;
   }
 
