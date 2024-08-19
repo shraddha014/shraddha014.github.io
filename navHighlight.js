@@ -14,6 +14,10 @@ const navLinks = {
 // Get the ID of the link to activate
 const activeLinkId = navLinks[currentPage];
 
+if (window.location.pathname === "/") {
+  activeLinkId = "home-id";
+}
+
 // Add the 'active' class to the corresponding link
 if (activeLinkId) {
   document.getElementById(activeLinkId).classList.add("active");
