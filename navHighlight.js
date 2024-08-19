@@ -4,6 +4,7 @@ console.log("currentpage", currentPage);
 
 // Map the paths to their corresponding link IDs
 const navLinks = {
+  "": "home-id",
   "index.html": "home-id",
   "experience.html": "experience-id",
   "education.html": "education-id",
