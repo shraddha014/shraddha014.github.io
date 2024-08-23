@@ -74,7 +74,7 @@ p {
     color: #555;
 }
 
-#home, #experience, #education, #projects {
+#home, #experience, #education, #projects, #skills {
     color: white;
     height: 80vh;
     display: flex;

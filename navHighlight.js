@@ -9,6 +9,7 @@ const navLinks = {
   "experience.html": "experience-id",
   "education.html": "education-id",
   "projects.html": "projects-id",
+  "skills.html": "skills-id",
 };
 
 // Get the ID of the link to activate
